@@ -1,0 +1,44 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+        @extend %section-title;
+       }
+       
+    &__list {
+         display: flex;
+         @extend %idents;
+         justify-content: center;
+       }
+       
+    .clients__type:not(:last-child) {
+        margin-right: 30px;
+      }
+       .clients__link {
+         @extend %property-display;
+         justify-content: center;
+         width: 170px;
+         height: 90px;
+         border: 1px solid $color-tlink-img;
+         border-radius: $border-radius;
+         color: $color-tlink-img;
+         transition: transform 250ms $timing-function;
+         transition-property: background-color;
+
+        &:focus,
+        &:hover {
+         color: $active-color;
+         border-color: $active-color;
+       }
+       }
+       
+       .clients__icon {
+         fill: currentColor;
+       }
+        
+      
+  }
+  
+
+

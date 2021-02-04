@@ -1,0 +1,90 @@
+.comands {
+    display: flex;
+    background-color: $background-icons;
+    padding: 94px 0;
+    
+    &__title
+        {
+            @extend %section-title;
+        }
+    &__list {
+            @extend %idents;
+            @extend %property-display;
+          }
+    .comands__list .comands__item:not(:last-child) {
+            margin-right: 30px;
+          }
+  }
+
+  .comands-card {
+    background: $background-color;
+    box-shadow: 0px 1px 3px $box-shadow-ccard, 0px 1px 1px $box-shadow-ccard2,
+      0px 2px 1px $drop-bg-color;
+    border-radius: 0px 0px 4px 4px;
+
+    &__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: $main-text-color;
+        text-align: center;
+        padding-top: 30px;
+        margin: 0;
+      }
+      
+    &__profession {
+        font-size: 16px;
+        line-height: 19px;
+        color: $additional-text-color;
+        text-align: center;
+        padding: 10px 0 16px;
+        margin: 0;
+      }
+  }
+  
+ 
+  
+.team-link__list {
+    @extend %property-display;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 30px;
+
+    .team-link__link {
+        @extend %property-display;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        background-color: $background-color;
+        transition: transform 250ms $timing-function;
+       
+        &:hover,
+        &:focus {
+          background-color: $active-color;
+          border-radius: 50%;
+          transition: transform 250ms $timing-function;
+          transition-property: background-color;
+        }
+    
+    }
+     
+
+      .team-link__img {
+        @extend %size-img;
+        fill: $color-tlink-img;
+        transition: transform 250ms $timing-function;
+        transition-property: background-color;
+      }
+      
+      .team-link__link:hover .team-link__img,
+      .team-link__link:focus .team-link__img {
+        fill: $background-color;
+      }
+      
+      .team-link__item:not(:last-child) {
+        margin-right: 10px;
+      }
+  }
+  
+
+  

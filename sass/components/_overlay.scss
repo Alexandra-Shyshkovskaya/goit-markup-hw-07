@@ -1,0 +1,16 @@
+.overlay {
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $background-overlay;
+    background-image: linear-gradient(
+        to right,
+        $color-gradient,
+        $color-gradient
+      ),
+      url(images/img-min.jpg), url(images/img-overlay-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }

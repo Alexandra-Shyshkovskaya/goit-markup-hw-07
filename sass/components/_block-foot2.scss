@@ -1,0 +1,50 @@
+.block-foot__general2 {
+    display: inline-block;
+    margin-left: 70px;
+    flex-wrap: wrap;
+
+    .block-foot__title {
+       @extend %foot-title;
+      }
+
+  }
+
+.block-foot__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+    @extend %idents;
+
+    .block-foot__item:not(:last-child) {
+        margin-right: 10px;
+      }
+    
+    .block-foot__link {
+        @extend %property-display;
+        justify-content: center;
+        height: 44px;
+        width: 44px;
+        border-radius: 50%;
+        background-color: $bg-foot-link;
+        transition: transform 250ms $timing-function;
+        transition-property: background-color;
+
+            &:focus,
+            &:hover {
+                background-color: $active-color;
+                    }
+      }
+
+    .block-foot__img {
+        @extend %size-img;
+        fill: $background-color;
+      }
+
+  }
+  
+  
+ 
+  
+  
+  
+  
+  

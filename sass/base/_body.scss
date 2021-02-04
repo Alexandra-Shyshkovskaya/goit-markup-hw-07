@@ -1,0 +1,8 @@
+body {
+    background-color: $background-color;
+    color: $additional-text-color;
+    @extend %text-decoration;
+    letter-spacing: $letter-spacing;
+    margin: 0;
+  }
+  

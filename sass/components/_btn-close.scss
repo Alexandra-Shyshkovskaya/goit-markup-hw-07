@@ -1,0 +1,23 @@
+.btn-close {
+    float: right;
+    padding: 0;
+    background-color: $background-color;
+    border: none;
+    transition: transform 250ms $timing-function;
+    transition-property: fill;
+   
+    .close-icon {
+        margin-top: 8px;
+        margin-right: 8px;
+        background: $background-color;
+      }
+      
+      &:focus,
+      &:hover {
+        fill: $active-color;
+        cursor: pointer;
+      }
+}
+  
+  
+  

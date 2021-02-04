@@ -1,0 +1,19 @@
+.logo
+  {
+    font-family: $sec-font-family;
+    font-weight: $sec-font-weight;
+    font-size: 26px;
+    color: $active-color;
+
+ &__header {
+    @extend .logo;
+    color: $text-color;
+}
+ &__footer {
+    @extend .logo;
+    color: $background-color;
+}
+
+}
+ 
+  

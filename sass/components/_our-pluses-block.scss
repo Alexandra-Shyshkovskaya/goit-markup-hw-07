@@ -1,0 +1,54 @@
+.our-pluses__section .our-pluses__list {
+    display: flex;
+  }
+  .our-pluses__section {
+    padding: 94px 0;
+
+    &__list {
+        @extend %idents;
+      }
+      .our-pluses__list .our-pluses__item:not(:last-child) {
+        margin-right: 30px;
+      }
+    &__item {
+        width: 270px;
+      }
+      
+    .our-pluses__title {
+        font-weight: $sec-font-weight;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $main-text-color;
+      
+        padding-bottom: 10px;
+        margin: 0;
+      }
+      
+    .our-pluses__description {
+        font-size: 14px;
+        line-height: 24px;
+        color: $additional-text-color;
+        margin: 0;
+      }
+      
+    .ground-of-icons {
+        display: inline-flex;
+        width: 270px;
+        height: 120px;
+        background-color: $background-icons;
+        border-radius: $border-radius;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+
+        .icons-of-pluses {
+            width: 70px;
+            height: 70px;
+          }
+      }
+      
+      
+  }
+  
+  
