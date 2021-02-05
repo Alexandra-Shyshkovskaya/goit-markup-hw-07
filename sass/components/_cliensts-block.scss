@@ -1,17 +1,14 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-
     &__title {
         @extend %section-title;
        }
-       
     &__list {
          display: flex;
          @extend %idents;
          justify-content: center;
-       }
-       
+       } 
     .clients__type:not(:last-child) {
         margin-right: 30px;
       }
@@ -32,12 +29,9 @@
          border-color: $active-color;
        }
        }
-       
        .clients__icon {
          fill: currentColor;
        }
-        
-      
   }
   
 
