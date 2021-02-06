@@ -20,6 +20,8 @@
         outline: none;
         padding: 6px 22px;
         border-radius: $border-radius;
+        transition: transform 250ms $timing-function;
+        transition-property: background-color, color, box-shadow;
 
         &:hover,
         &:focus {

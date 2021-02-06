@@ -19,8 +19,7 @@
     letter-spacing: 0.02em;
     color: $main-text-color;
     padding: 32px 0;
-    transition: transform 250ms $timing-function;
-    transition-property: background-color;
+    
   }
   
   .nav__list .nav__link:hover,
@@ -28,8 +27,7 @@
   .nav__list .nav__link:active,
   .nav__list .nav__link.current {
     color: $active-color;
-    transition: transform 250ms $timing-function;
-    transition-property: background-color;
+   
   }
   
  
@@ -52,8 +50,7 @@
     top: 76px;
     background: $active-color;
     border-radius: 2px;
-    transition: transform 250ms $timing-function;
-    transition-property: background-color;
+   
   }
   }
   
